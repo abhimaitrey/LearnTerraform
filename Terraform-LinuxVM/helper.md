@@ -1,5 +1,15 @@
 Helper File
 
+## Files information
+
+### File name => Description
+main.tf => terraform configuration details
+
+backend.tf => Azure storage account information for maintaining the state
+
+vminfra.tf => template for provisioning the linux virtual machine
+
+
 ## Commands to use 
 
 To get the storage account access key using Azure CLI
@@ -7,7 +17,7 @@ To get the storage account access key using Azure CLI
 <code>az storage account keys list --resource-group trfm-storage --account-name "trfmstorage1001" --query '[0].value' -o tsv</code>
 
 
-### 1 Initialise terraform
+### 1 Initialize terraform
 <code> terraform init </code>
 
 if storage account and tfstate is already configured then use the following command:
