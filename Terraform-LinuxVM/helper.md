@@ -7,14 +7,14 @@ To get the storage account access key using Azure CLI
 <code>az storage account keys list --resource-group trfm-storage --account-name "trfmstorage1001" --query '[0].value' -o tsv</code>
 
 
-### 1
+### 1 Initialise terraform
 <code> terraform init </code>
 
 if storage account and tfstate is already configured then use the following command:
 
 <code>terraform init -reconfigure  </code>
 
-### 2
+### 2 Prepare a plan
 <code>terraform plan</code>
 
 if you wish to record the plan for future reference then use the following command:
